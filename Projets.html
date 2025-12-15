@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza - Mes Projets</title>
+    
+    <style>
+        /* Style inspiré du mode sombre / terminal */
+        :root {
+            --fond: #181818;
+            --texte: #DDEEFF; 
+            --accent: #FF5722; /* Orange pour les titres et liens */
+            --police: 'Courier New', monospace;
+        }
+
+        /* Désactive le défilement fluide car on utilise des pages séparées */
+        html {
+            scroll-behavior: auto;
+        }
+
+        body {
+            font-family: var(--police);
+            background-color: var(--fond);
+            color: var(--texte);
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--texte);
+            margin-top: 30px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+            padding-top: 0; 
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+        
+        /* Simuler une ligne de commande */
+        .prompt {
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Style pour les sections (on peut le laisser ou le retirer si non utilisé) */
+        .option-detail {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #00FF00; /* Vert pour démarquer les infos */
+        }
+
+        /* --- Style de la barre de navigation (Boutons) --- */
+        nav {
+            background-color: var(--fond); 
+            padding: 10px 0;
+            border-top: 1px dashed var(--accent); 
+            border-bottom: 1px dashed var(--accent);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--texte);
+            font-weight: bold;
+            padding: 8px 15px;
+            
+            /* Styles pour transformer le lien en bouton */
+            display: inline-block;
+            background-color: #2a2a2a; 
+            border: 1px solid var(--accent); 
+            border-radius: 3px; 
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        /* Effet de survol (Bouton pressé) */
+        nav a:hover, nav a.active {
+            color: var(--fond); 
+            background-color: var(--accent); 
+            border-color: var(--texte); 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>&#9658; PROJETS ACTUELS & OBJECTIFS</h1>
+        <p>Mes réalisations concrètes en administration système et mes objectifs dans le développement d'OS et de ROMs.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">INFOS CLÉS</a></li>
+            <li><a href="Project.html" class="active">PROJETS</a></li> <li><a href="hh.html#sisr">BTS SIO</a></li>
+            <li><a href="veille.html">VEILLE TECH</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <section id="projets-details">
+        <h2>RÉALISATIONS</h2>
+
+        <div class="option-detail">
+            <h3>&#9658; Serveur Web Sécurisé sur Debian</h3>
+            <p>Dernière réalisation : Mise en place d'un serveur web **Apache** sur ma machine **Debian**.</p>
+            <p><span class="prompt"></span> Sécurisation : Configuration de l'accès par mot de passe (via **`.htpasswd`**) pour restreindre l'accès à certaines zones (IP: 10.63.15.49).</p>
+        </div>
+        
+        <div class="option-detail">
+            <h3>&#9658; Modding et Systèmes d'exploitation</h3>
+            <p>Compétences clés :Réinstallation de firmware avec Odin sur Android, et installation/gestion de plusieurs systèmes d'exploitation sur des machines virtuelles et physiques.</p>
+        </div>
+
+        <h2>OBJECTIFS FUTURS</h2>
+        <ul>
+            <li><span class="prompt"></span> Création d'un système d'exploitation basé sur cpcdos (projet à long terme).</li>
+            <li><span class="prompt"></span> Création d'une ROM custom basée sur AOSP (Android Open Source Project) pour le modding Android.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p style="text-align: center; color: #555;">// Transfert de fichiers terminé. &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

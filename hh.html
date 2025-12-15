@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza - BTS SIO | Options</title>
+    
+    <style>
+        /* Style inspiré du mode sombre / terminal */
+        :root {
+            --fond: #181818;
+            --texte: #DDEEFF; 
+            --accent: #FF5722; /* Orange pour les titres et liens */
+            --police: 'Courier New', monospace;
+        }
+
+        /* Désactive le défilement fluide car on utilise des pages séparées */
+        html {
+            scroll-behavior: auto;
+        }
+
+        body {
+            font-family: var(--police);
+            background-color: var(--fond);
+            color: var(--texte);
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--texte);
+            margin-top: 30px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+            padding-top: 0; /* Pas besoin de padding-top si la nav n'est pas fixe */
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+        
+        /* Simuler une ligne de commande */
+        .prompt {
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Style pour les sections SIO */
+        .option-detail {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #00FF00; /* Vert pour démarquer les infos */
+        }
+
+        /* --- Style de la barre de navigation (Boutons) --- */
+        nav {
+            background-color: var(--fond); 
+            padding: 10px 0;
+            border-top: 1px dashed var(--accent); 
+            border-bottom: 1px dashed var(--accent);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--texte);
+            font-weight: bold;
+            padding: 8px 15px;
+            
+            /* Styles pour transformer le lien en bouton */
+            display: inline-block;
+            background-color: #2a2a2a; 
+            border: 1px solid var(--accent); 
+            border-radius: 3px; 
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        /* Effet de survol (Bouton pressé) */
+        nav a:hover, nav a.active {
+            color: var(--fond); 
+            background-color: var(--accent); 
+            border-color: var(--texte); 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>&#9658; BTS SIO - OPTIONS ET DÉTAILS</h1>
+        <p>Information sur les deux spécialisations : SISR et SLAM.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">INFOS CLÉS</a></li>
+            <li><a href="Project.html">PROJETS</a></li>
+            <li><a href="sio.html" class="active">BTS SIO</a></li> <li><a href="veille.html">VEILLE TECH</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <section id="sio-details">
+        <h2>OPTIONS BTS SIO</h2>
+
+        <div class="option-detail">
+            <h3>&#9658; [SISR] Solutions d'Infrastructure, Systèmes et Réseaux</h3>
+            <p>Se concentre sur l'**administration** et la **maintenance** des infrastructures informatiques, y compris les serveurs (Linux/Windows), les réseaux et la virtualisation. C'est l'expertise du "**moteur**".</p>
+            <p>Matières clés : Réseaux, Systèmes d'exploitation (**Debian**, Windows Server), Sécurité des infrastructures.</p>
+        </div>
+
+        <div class="option-detail">
+            <h3>&#9658; [SLAM] Solutions Logicielles et Applications Métiers</h3>
+            <p>Se concentre sur la **conception** et le **développement** de solutions logicielles (applications web, mobiles, logicielles). C'est l'expertise de la "**création**".</p>
+            <p>Matières clés : Langages de programmation (Java, C#...), Bases de données (SQL), Développement Web.</p>
+        </div>
+    </section>
+    
+    <section id="veille-sio">
+        <h2>VEILLE TECHNOLOGIQUE PERTINENTE</h2>
+        <p>Ma veille se concentre sur l'administration sécurisée des serveurs web (comme Apache sur Debian) et les avancées en développement mobile (ROM custom Android et AOSP).</p>
+    </section>
+
+    <footer>
+        <p style="text-align: center; color: #555;">// Système opérationnel. &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
